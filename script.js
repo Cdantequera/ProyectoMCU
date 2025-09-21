@@ -2,8 +2,8 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     // Pon aquí tus llaves de la API de Marvel.
-    const MI_LLAVE_PUBLICA = '79135c3961a0ae785bfe4b350ed6e9cc';
-    const MI_LLAVE_PRIVADA = 'e387b3feda32ac2ff67bed5a0d8beaf90cb250b7';
+    const MI_LLAVE_PUBLICA = '';
+    const MI_LLAVE_PRIVADA = '';
 
     // La dirección base de la API de Marvel a la que haremos las peticiones.
     const URL_API_MARVEL = 'https://gateway.marvel.com/v1/public/characters';
