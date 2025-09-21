@@ -1,51 +1,120 @@
-🦸 Marvel Heroes Explorer
-Este proyecto es una página web interactiva que consume la Marvel API para mostrar personajes en tiempo real. Permite buscar héroes, ver sus imágenes y nombres, y guardar tus favoritos.
-<img width="681" height="295" alt="ProyectoMcu" src="https://github.com/user-attachments/assets/573f21db-625d-4155-9bcc-390d5ccf13a9" />
+# 🦸‍♂️ Proyecto MCU
 
-🚀 Características
-• 🔎 Búsqueda de personajes usando la API de Marvel.
-• 🖼 Visualización de imágenes y nombres de los héroes.
-• ⭐ Sistema de favoritos persistente gracias a localStorage.
-• ❌ Eliminar personajes de la lista mostrada.
-• 👁 Ver favoritos de forma individual en el panel derecho.
-• ⚡ Código escrito en JavaScript moderno (fetch, async/await).
-📂 Estructura del Proyecto
-.
-├── index.html       # Estructura de la página
-├── style.css        # Estilos (diseño y colores)
-└── script.js        # Lógica principal de conexión a la API y manejo de eventos
-🔑 Configuración de la API
-Este proyecto usa la Marvel Developer API, así que debes obtener tus llaves:
 
-1. Regístrate en https://developer.marvel.com/
-2. Crea un nuevo proyecto para obtener tu Public Key y Private Key.
-3. Reemplaza las variables dentro de script.js:
+<img width="681" height="295" alt="ProyectoMcu" src="https://github.com/user-attachments/assets/d4de91c6-3c14-48d0-91ff-4a84921a4d86" />
 
-const MI_LLAVE_PUBLICA = 'TU_PUBLIC_KEY';
-const MI_LLAVE_PRIVADA = 'TU_PRIVATE_KEY';
 
-⚠ IMPORTANTE: Marvel requiere generar un hash MD5 usando timestamp + privateKey + publicKey. Este proyecto ya lo hace por ti usando CryptoJS.
-🛠 Instalación y Uso
-1. Clona este repositorio o descarga los archivos:
-   git clone https://github.com/TU-USUARIO/marvel-heroes-explorer.git
-2. Abre index.html en tu navegador.
-3. Escribe el nombre de un personaje en la barra de búsqueda y presiona Enter.
-4. Marca como ⭐ favorito a tus héroes preferidos y se guardarán en el panel lateral.
+Una aplicación web interactiva para explorar el universo Marvel utilizando la API oficial de Marvel Comics. Busca tus personajes favoritos, agrégalos a tu lista personal y descubre el multiverso de héroes y villanos.
 
-📚 Tecnologías Usadas
+## 🚀 Características
 
-• HTML5 – Estructura de la página
+- **Búsqueda en tiempo real**: Encuentra personajes de Marvel por nombre
+- **Sistema de favoritos**: Guarda tus personajes preferidos localmente
+- **Interfaz cyberpunk**: Diseño futurista con efectos neon y gradientes
+- **Responsive**: Compatible con dispositivos móviles y desktop
+- **Persistencia local**: Tus favoritos se guardan en el navegador
 
-• CSS3 – Estilos y diseño visual
+## 🛠️ Tecnologías Utilizadas
 
-• JavaScript (Vanilla) – Conexión a la API y lógica de favoritos
+- **HTML5**: Estructura semántica
+- **CSS3**: Estilos avanzados con efectos visuales
+- **JavaScript ES6+**: Lógica de aplicación y manejo de API
+- **Marvel API**: Fuente de datos de personajes
+- **CryptoJS**: Para autenticación con la API de Marvel
+- **LocalStorage**: Persistencia de datos local
 
-• Marvel API – Datos oficiales de personajes
+## 📦 Instalación
 
-• CryptoJS – Generación de hash MD5
+1. Clona este repositorio:
+```bash
+git clone https://github.com/tu-usuario/proyecto-mcu.git
+```
 
-📜 Licencia
+2. Navega al directorio del proyecto:
+```bash
+cd proyecto-mcu
+```
 
-Este proyecto es de código abierto. Puedes modificarlo y adaptarlo para uso personal o educativo.
+3. Obtén tus claves de API de Marvel:
+   - Visita [Marvel Developer Portal](https://developer.marvel.com/)
+   - Regístrate y obtén tu clave pública y privada
 
-Proyecto creado por DAnte.Dev. Si te gustó el proyecto, no dudes en dejar una ⭐ en tu repositorio.
+4. Edita el archivo `script.js` y reemplaza las claves de API:
+```javascript
+const MI_LLAVE_PUBLICA = 'tu_clave_publica_aqui';
+const MI_LLAVE_PRIVADA = 'tu_clave_privada_aqui';
+```
+
+5. Abre `index.html` en tu navegador favorito
+
+## 🎮 Cómo Usar
+
+1. **Buscar personajes**: Escribe el nombre de un personaje en la barra de búsqueda
+2. **Agregar favoritos**: Haz clic en el botón "⭐ Favorito" en cualquier personaje
+3. **Ver favoritos**: Usa el botón "👁️ Ver" en el panel de favoritos
+4. **Quitar personajes**: Usa los botones de eliminar según necesites
+
+## 🌟 Funcionalidades
+
+### Búsqueda Inteligente
+- Búsqueda por nombre que comience con el texto ingresado
+- Manejo de errores de conexión
+- Mensajes informativos durante la carga
+
+### Sistema de Favoritos
+- Almacenamiento local persistente
+- Prevención de duplicados
+- Gestión completa (agregar/quitar/visualizar)
+
+### Interfaz Moderna
+- Efectos de hover y animaciones suaves
+- Paleta de colores cyberpunk (azul neon, magenta, verde)
+- Gradientes y efectos de brillo
+- Diseño card-based para mejor organización
+
+## 🎨 Capturas de Pantalla
+
+La aplicación presenta un diseño futurista con:
+- Fondo oscuro con efectos de partículas
+- Tarjetas de personajes con bordes neon
+- Panel lateral de favoritos
+- Efectos visuales dinámicos
+
+## 🔧 Estructura del Proyecto
+
+```
+proyecto-mcu/
+│
+├── index.html          # Estructura principal
+├── styles.css          # Estilos y animaciones
+├── script.js           # Lógica de la aplicación
+└── README.md           # Este archivo
+```
+
+## 🤝 Contribuciones
+
+Las contribuciones son bienvenidas. Para contribuir:
+
+1. Fork el proyecto
+2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
+3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+4. Push a la rama (`git push origin feature/AmazingFeature`)
+5. Abre un Pull Request
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
+
+## 🙏 Reconocimientos
+
+- **Marvel Comics** por proporcionar la API
+- **CryptoJS** por las herramientas de encriptación
+- La comunidad de desarrolladores por inspiración y recursos
+
+**DAnte.Dev** - Creador del Proyecto
+
+
+
+⭐ **¡No olvides darle una estrella al proyecto si te gustó!** ⭐
+
+*Sistema The Goog775 © 2025 | Creado por DAnte.Dev | Todos los derechos reservados*
