@@ -1,0 +1,32 @@
+# Archivos de entorno (environment variables)
+.env
+.env.local
+.env.production
+.env.development
+
+# Archivos de configuración con claves
+config.js
+config.json
+keys.js
+credentials.*
+secrets.*
+
+# Archivos específicos que contengan tus llaves
+*_keys.js
+*_config.js
+
+# Logs
+logs
+*.log
+
+# Dependencias
+node_modules/
+dist/
+build/
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
